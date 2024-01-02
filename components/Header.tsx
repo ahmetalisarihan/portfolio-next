@@ -15,7 +15,7 @@ const Header = () => {
         <ul className="flex items-center gap-8">
           {navLinks.map((link, index) => (
             <li key={index}>
-              <NavLink href={link.url} label={link.label}></NavLink>
+              <NavLink href={link.url} label={link.label}/>
             </li>
           ))}
         </ul>
