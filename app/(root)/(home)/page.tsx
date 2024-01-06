@@ -1,5 +1,6 @@
+import PortfolioItem from "@/components/PortfolioItem";
 import SectionHeading from "@/components/SectionHeading";
-import { benefits, skills } from "@/constants";
+import { benefits, portfolios, skills } from "@/constants";
 import { ArrowRight, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -100,6 +101,27 @@ const page = () => {
         
           ))}
         </div>
+      </section>
+
+      {/* portfolio section */}
+      <section className="padding-section max-width">
+        <SectionHeading
+          title="Portfolio"
+          subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quia perferendis est nobis culpa ipsam, quisquam inventore cum nemo nisi vel! Asperiores eveniet nesciunt deleniti aliquam, odio ipsam rem! Eum."
+        />
+
+        {/* portfolio */}
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] tablet:grid-cols-[repeat(auto-fit, minmax(400px,1fr))] gap-3 tablet:gap-6">
+          {
+          portfolios.slice(0,3).map((portfolio, index) => (
+           <PortfolioItem key={index} portfolio={portfolio}/>
+        
+          ))}
+        </div>
+
+            <Link href={"/portfolio"} className="btn btn-primary mt-10 mx-auto w-max">
+              View All Projects
+              </Link>
       </section>
     </>
   );
