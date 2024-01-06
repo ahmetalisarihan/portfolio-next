@@ -1,5 +1,5 @@
 import SectionHeading from "@/components/SectionHeading";
-import { skills } from "@/constants";
+import { benefits, skills } from "@/constants";
 import { ArrowRight, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -74,6 +74,33 @@ const page = () => {
       </section>
 
       {/* benifits section */}
+      <section className="max-width section-padding">
+        <SectionHeading
+          title="Benifits"
+          subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quia perferendis est nobis culpa ipsam, quisquam inventore cum nemo nisi vel! Asperiores eveniet nesciunt deleniti aliquam, odio ipsam rem! Eum."
+        />
+
+        {/* benifits */}
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] tablet:grid-cols-[repeat(auto-fit, minmax(400px,1fr))] 
+        gap-3 tablet:gap-6 mb-3 tablet:mb-6">
+          {benefits.slice(0,2).map((benefit, index) => (
+            <div key={index} className="box">
+                <h5 className="text-grey-700 mb-2">{benefit.name}</h5>
+                <p className="text-grey-600">{benefit.description}</p>
+            </div>
+        
+          ))}
+        </div>
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] tablet:grid-cols-[repeat(auto-fit, minmax(400px,1fr))] gap-3 tablet:gap-6">
+          {benefits.slice(2).map((benefit, index) => (
+            <div key={index} className="box">
+                <h5 className="text-grey-700 mb-2">{benefit.name}</h5>
+                <p className="text-grey-600">{benefit.description}</p>
+            </div>
+        
+          ))}
+        </div>
+      </section>
     </>
   );
 };
