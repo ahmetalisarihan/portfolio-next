@@ -1,5 +1,6 @@
 import PortfolioItem from "@/components/PortfolioItem";
 import SectionHeading from "@/components/SectionHeading";
+import TestimonialSection from "@/components/TestimonialSection";
 import { benefits, portfolios, skills } from "@/constants";
 import { ArrowRight, Phone } from "lucide-react";
 import Image from "next/image";
@@ -123,6 +124,11 @@ const page = () => {
               View All Projects
               </Link>
       </section>
+
+      {/* testimonial section */}
+      <TestimonialSection />
+
+      
     </>
   );
 };

@@ -189,8 +189,8 @@ export const portfolios = [
 export const reviews = [
   {
     id: 1,
-    name: "Lorem Ipsum",
-    designation: "Lorem Ipsum",
+    name: "Ahmet Ali Sarıhan",
+    designation: "Developer",
     review:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique",
     stars: 5,
@@ -289,8 +289,8 @@ export const reviews = [
   },
   {
     id: 5,
-    name: "",
-    designation: "",
+    name: "Lorem Ipsum",
+    designation: "Lorem Ipsum",
     review:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique",
     stars: 4,
