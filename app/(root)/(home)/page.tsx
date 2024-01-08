@@ -1,3 +1,4 @@
+import FaqsSection from "@/components/FaqsSection";
 import PortfolioItem from "@/components/PortfolioItem";
 import SectionHeading from "@/components/SectionHeading";
 import TestimonialSection from "@/components/TestimonialSection";
@@ -127,8 +128,9 @@ const page = () => {
 
       {/* testimonial section */}
       <TestimonialSection />
-
       
+      {/* FAQs Section */}
+        <FaqsSection />
     </>
   );
 };
