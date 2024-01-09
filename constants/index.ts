@@ -385,7 +385,7 @@ export const contactDetails = [
 export const timeline = [
   {
     id: 1,
-    title: "Web Developer",
+    title: "Senior Web Developer",
     duration: "2023 - Present",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",

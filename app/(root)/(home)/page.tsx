@@ -37,6 +37,49 @@ const page = () => {
               <ArrowRight size={16} />
             </Link>
           </div>
+
+          {/* stats */}
+          <div className="bg-peach-400 w-full py-8 px-10 rounded-l-lg mt-16 flex-wrap gap-12 hidden tablet:flex">
+            <div>
+              <h3 className="text-grey-700">
+                55 <span className="text-purple">+</span>
+              </h3>
+              <p className="text-grey-600">Projects Completed</p>
+            </div>
+            <div>
+              <h3 className="text-grey-700">
+                55 <span className="text-purple">+</span>
+              </h3>
+              <p className="text-grey-600">Happy Customers</p>
+            </div>
+            <div>
+              <h3 className="text-grey-700">
+                5 <span className="text-purple">+</span>
+              </h3>
+              <p className="text-grey-600">Years of experience</p>
+            </div>
+          </div>
+
+          <div className="mt-16 grid grid-cols-2 gap-3 tablet:hidden">
+            <div className="py-8 px-10 rounded-lg bg-peach-400 text-center col-span-2">
+              <h3 className="text-grey-700">
+                55 <span className="text-purple">+</span>
+              </h3>
+              <p className="text-grey-600">Projects Completed</p>
+            </div>
+            <div className="py-8 px-10 rounded-lg bg-peach-400 text-center col-span-2">
+              <h3 className="text-grey-700">
+                55 <span className="text-purple">+</span>
+              </h3>
+              <p className="text-grey-600">Happy Customers</p>
+            </div>
+            <div className="py-8 px-10 rounded-lg bg-peach-400 text-center col-span-2">
+              <h3 className="text-grey-700">
+                5 <span className="text-purple">+</span>
+              </h3>
+              <p className="text-grey-600">Years of experience</p>
+            </div>
+          </div>
         </div>
         {/* Right side */}
         <div className="relative w-full tablet:w-1/3 h-[400px] tablet:h-[700px] rounded-b-2xl overflow-hidden">
@@ -84,23 +127,23 @@ const page = () => {
         />
 
         {/* benifits */}
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] tablet:grid-cols-[repeat(auto-fit, minmax(400px,1fr))] 
-        gap-3 tablet:gap-6 mb-3 tablet:mb-6">
-          {benefits.slice(0,2).map((benefit, index) => (
+        <div
+          className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] tablet:grid-cols-[repeat(auto-fit, minmax(400px,1fr))] 
+        gap-3 tablet:gap-6 mb-3 tablet:mb-6"
+        >
+          {benefits.slice(0, 2).map((benefit, index) => (
             <div key={index} className="box">
-                <h5 className="text-grey-700 mb-2">{benefit.name}</h5>
-                <p className="text-grey-600">{benefit.description}</p>
+              <h5 className="text-grey-700 mb-2">{benefit.name}</h5>
+              <p className="text-grey-600">{benefit.description}</p>
             </div>
-        
           ))}
         </div>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] tablet:grid-cols-[repeat(auto-fit, minmax(400px,1fr))] gap-3 tablet:gap-6">
           {benefits.slice(2).map((benefit, index) => (
             <div key={index} className="box">
-                <h5 className="text-grey-700 mb-2">{benefit.name}</h5>
-                <p className="text-grey-600">{benefit.description}</p>
+              <h5 className="text-grey-700 mb-2">{benefit.name}</h5>
+              <p className="text-grey-600">{benefit.description}</p>
             </div>
-        
           ))}
         </div>
       </section>
@@ -114,23 +157,24 @@ const page = () => {
 
         {/* portfolio */}
         <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] tablet:grid-cols-[repeat(auto-fit, minmax(400px,1fr))] gap-3 tablet:gap-6">
-          {
-          portfolios.slice(0,3).map((portfolio, index) => (
-           <PortfolioItem key={index} portfolio={portfolio}/>
-        
+          {portfolios.slice(0, 3).map((portfolio, index) => (
+            <PortfolioItem key={index} portfolio={portfolio} />
           ))}
         </div>
 
-            <Link href={"/portfolio"} className="btn btn-primary mt-10 mx-auto w-max">
-              View All Projects
-              </Link>
+        <Link
+          href={"/portfolio"}
+          className="btn btn-primary mt-10 mx-auto w-max"
+        >
+          View All Projects
+        </Link>
       </section>
 
       {/* testimonial section */}
       <TestimonialSection />
-      
+
       {/* FAQs Section */}
-        <FaqsSection />
+      <FaqsSection />
     </>
   );
 };
