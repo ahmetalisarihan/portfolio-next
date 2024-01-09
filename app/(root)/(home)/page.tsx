@@ -16,18 +16,22 @@ const page = () => {
         {/* Left side */}
         <div className="tablet:w-2/3 mt-10 tablet:mt-0">
           <div className="flex flex-col gap-3 items-center tablet:items-start max-w-2xl text-center tablet:text-left">
-            <p className="px-4 py-2 bg-peach-500 text-gray-600 w-max rounded">
+            <p className="px-4 py-2 bg-peach-500 text-gray-600 w-max rounded"
+            data-aos="fade-down" 
+            >
               Hello There
             </p>
-            <h1 className="text-grey">AAS Welcome's you</h1>
-            <p className="text-grey-600">
+            <h1 className="text-grey"
+            data-aos="fade-down" data-aos-delay="100"
+            >AAS Welcome's you</h1>
+            <p className="text-grey-600" data-aos="fade-down" data-aos-delay="200">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
               quia perferendis est nobis culpa ipsam, quisquam inventore cum
               nemo nisi vel! Asperiores eveniet nesciunt deleniti aliquam, odio
               ipsam rem! Eum.
             </p>
           </div>
-          <div className="flex gap-5 mt-10 justify-center tablet:justify-start">
+          <div className="flex gap-5 mt-10 justify-center tablet:justify-start" data-aos="fade-right" data-aos-delay="300">
             <Link href={"/contact"} className="btn btn-primary">
               <Phone />
               Contact now
@@ -82,7 +86,7 @@ const page = () => {
           </div>
         </div>
         {/* Right side */}
-        <div className="relative w-full tablet:w-1/3 h-[400px] tablet:h-[700px] rounded-b-2xl overflow-hidden">
+        <div className="relative w-full tablet:w-1/3 h-[400px] tablet:h-[700px] rounded-b-2xl overflow-hidden" data-aos="fade-left" data-aos-delay="100">
           <Image
             src={"/images/hero.png"}
             alt="hero"
