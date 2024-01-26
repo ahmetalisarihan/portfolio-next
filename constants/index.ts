@@ -198,17 +198,17 @@ export const reviews = [
       {
         id: 1,
         icon: Facebook,
-        url: "#",
+        url: "https://www.facebook.com/profile.php?id=100004070712822&mibextid=JRoKGi",
       },
       {
         id: 2,
         icon: Linkedin,
-        url: "#",
+        url: "https://www.linkedin.com/in/ahmet-ali-sarihan-85a958a8",
       },
       {
         id: 3,
         icon: Twitter,
-        url: "#",
+        url: "https://x.com/AhmetAliSarihan?t=mTps11Mq8BJV50Jk6EtSNg&s=09",
       },
     ],
   },
